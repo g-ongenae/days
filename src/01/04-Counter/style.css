@@ -1,0 +1,41 @@
+body {
+  background-color: #75AF96;
+  font-family: monospace;
+  text-align: center;
+}
+
+div {
+  margin: 25%;
+  padding: 1%;
+  background-color: #AA7939;
+}
+
+#counter {
+  border: 2px solid;
+  background-color: #555555;  /* Black */
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#counter:hover {
+  background-color: white;
+  color: #555555; /* Black */
+  border: 2px solid #555555;
+}
+
+#counter:active {
+  background-color: #555555;
+  box-shadow: 0 5px #555;
+  transform: translateY(4px);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    text-align: center;
+}
