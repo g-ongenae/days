@@ -32,7 +32,7 @@ promptNewCalculation();
 const button = document.getElementById('button');
 button.addEventListener('click', () => {
     const userResult = document.forms['calcul']['result'].value;
-    calculation[calculation.length].userResult = userResult;
+    calculation[calculation.length - 1].userResult = userResult;
     message.innerText = desiredResult === parseInt(userResult) ?
         'Bravo !' : 'Oups, the result was ' + desiredResult;
     
