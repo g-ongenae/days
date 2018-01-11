@@ -1,4 +1,4 @@
-const checkPalyndrome = (word) => {
+const checkPalindrome = (word) => {
     // Prepare String: Remove special char and lowercase it. 
     word = word
         .toLowerCase()
@@ -20,9 +20,9 @@ const checkPalyndrome = (word) => {
 const validateForm = () => {
     const userInput = document.forms['pal']['word'].value;
 
-    let res = checkPalyndrome(userInput) ?
-        'Palyndrome!' :
-        'Not a Palyndrome';
+    let res = checkPalindrome(userInput) ?
+        'Palindrome!' :
+        'Not a Palindrome';
 
     document.getElementById('message').innerText = res;
 };
