@@ -3,15 +3,28 @@ body {
     font-family: monospace;
 }
 
+section {
+    /* Center in middle of screen */
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translateX(-50%) translateY(-50%);
+
+    width: 50vw;
+}
+
 h1 {
     text-align: center;
-    margin: 5% 25% 15% 25%;
     padding: 1%;
     background-color: #AA7939;
 }
 
+header {
+    margin: 5% 25% 15% 25%;
+}
+
 ol {
-    margin: 0% 30% 0% 30%;
+    margin: 0% 10% 0% 10%;
     padding: 1%;
     text-align: justify;
 }
@@ -21,8 +34,73 @@ li {
 }
 
 footer {
-    position: fixed;
+	/* Center at bottom */
+    position: absolute;
     bottom: 0;
-    width: 100vw;
+    left: 50vw;
+    transform: translateX(-50%);
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+button {
+    border: 2px solid;
+    background-color: #555555;
+    color: white;
+    padding: 15px 32px;
     text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+button:hover, input[type="submit"]:hover, .clickable:hover {
+    background-color: white;
+    color: #555555;
+    border: 2px solid #555555;
+}
+
+button:active {
+    background-color: #555555;
+    box-shadow: 5px 5px #555;
+    border: 2px solid black;
+    transform: translateY(4px) translateX(4px);
+}
+
+input[type="submit"] {
+    background-color: #555555;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+
+input[type="submit"]:active {
+    background-color: #555555;
+    box-shadow: 5px 5px #555;
+    border: 2px solid black;
+    transform: translateY(4px) translateX(-48%);
+}
+
+.clickable {
+    border: 2px solid white;
+}
+
+.clickable:active {
+    border: 2px solid black;
+    box-shadow: 5px 5px #555;
+    transform: translateY(4px) translateX(4px);
+}
+
+form input {
+    margin: 0 25vw 1%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-family: inherit;
+    padding: 2%;
+    font-size: 1.5em;
+    width:350px;
 }
