@@ -26,62 +26,42 @@ body {
 	background-color: $orange;
 }
 
-form {
-	margin: 0 25% 2.5% 25%;
-	border: 1px white solid;
-	padding: 1%;
+section {
+    /* Center in middle of screen */
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translateX(-50%) translateY(-50%);
+
+    width: 50vw;
 	background-color: $yellow;
+	padding: 0.5%;
 }
 
-form table {
-	display: block;
-	width: auto;
-}
-
-table tr {
-	display: block;
-	width: 790px;
-}
-
-td {
-	width: calc(790px/2);
-	padding: 1%;
-}
-
-.right {
-	text-align: right;
-	margin-right: 25px;
-}
-
-.left {
-	text-align: left;
-	margin-left: 25px;
-}
-
-#center {
-	text-align: center;
-	width: 790px;
-	
-	input {
-		padding: 1%;
-		width: calc(790px/4);
-	}
+fieldset {
+	border: none;
 }
 
 input {
-	padding: 2.5%;
-	width: calc(790px/4);
+	width: 200px;
+	padding: 1%;
+}
+
+label {
+	/* Align all label */
+	display: inline-block;
+	width: 200px;
+	text-align: right;
 }
 
 footer {
-    position: fixed;
+	/* Center at bottom */
+    position: absolute;
     bottom: 0;
-    width: 100vw;
-    text-align: center;
+    left: 50vw;
+    transform: translateX(-50%);
 }
 
 /*
-	Notes: The form is not responsive, at all.
-	TODO: FIX IT.
-	Also, find better color.
+	TODO: find better color.
 */

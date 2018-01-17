@@ -1,33 +1,38 @@
-.icon(onclick="javascript:window.open('http://www.dailyui.co/')")
-	p DailyUI #001
+mixin space
+	span !{' '}
+<!DOCTYPE html>
+html
+	head
+		title Sign Up
+		link(rel="stylesheet" type="text/css" href="style.css")
+	body
+		.icon(onclick="javascript:window.open('http://www.dailyui.co/')")
+			p DailyUI #001
 
-.main
-	h1 Sign up.
-	
-form(onsubmit="return validateForm();")
-	table
-		tr
-			td.right
-				label Your username:
-			td.left
-				input(type="text" name="username" placeholder="JohnDoe" required)
-		tr
-			td.right
-				label Your email:
-			td.left
-				input(type="email" name="email" placeholder="john.doe@example.com" required)
-		tr
-			td.right
-				label Your password:
-			td.left
-				input(type="password" name="password" placeholder="********" required)
-		tr
-			td#center(rowspan="2")
-				input(type="submit" value="Sign up")
+		.main
+			h1 Sign up.
+			
+		section
+			form(onsubmit="return validateForm();")
+				fieldset
+					label Your username:
+					+space()
+					input(type="text" name="username" placeholder="JohnDoe" required)
+				fieldset
+					label Your email:
+					+space()
+					input(type="email" name="email" placeholder="john.doe@example.com" required)
+				fieldset
+					label Your password:
+					+space()
+					input(type="password" name="password" placeholder="********" required)
+				fieldset
+					input(type="submit" value="Sign up")
+			p Already have an account? 
+				a(href="#") Sign in.
+				
+		footer
+			p &lt;/&gt; with ❤️ by 
+				a(href="https://g-ongenae.github.io/") Guillaume Ongenae
 		
-p Already have an account? 
-	a(href="#") Sign in.
-		
-footer
-	p &lt;/&gt; with ❤️ by 
-		a(href="https://g-ongenae.github.io/") Guillaume Ongenae
+		script(type="text/javascript" src="app.js")
