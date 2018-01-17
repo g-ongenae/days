@@ -20,7 +20,19 @@ h1 {
 }
 
 header {
-    margin: 5% 25% 15% 25%;
+    margin: 2.5% 25% 2.5% 25%;
+}
+
+.icon {
+	text-align: center;
+	margin: 1%;
+	border: 1px white solid;
+	background-color: #AA7939;
+	width: 10%;
+}
+
+.icon a {
+    text-decoration: none;
 }
 
 ol {
