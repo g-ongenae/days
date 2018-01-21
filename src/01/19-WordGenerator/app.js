@@ -55,3 +55,24 @@ setInterval(setMessage, 1000);
  * - Use syllables instead of char.
  * - Use a false random.
  */
+
+/**
+ * Using ASCII Table instead of an array.
+ */
+
+// const randomChar = () => {
+//   let r = random(256);
+//   return (r >= 65 && r <= 90) || (r >= 97 && r <= 122) ? 
+//      String.fromCharCode(r) : '';
+// };
+
+// const randomString = () => {
+//   let string  = "";
+//   const max = random(15);
+  
+//   for (let i = 0; i < max; i++) {
+//     string += randomChar();
+//   } 
+  
+//   return string;
+// };
