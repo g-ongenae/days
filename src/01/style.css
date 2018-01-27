@@ -35,13 +35,12 @@ header {
     text-decoration: none;
 }
 
-ol {
-    margin: 0% 10% 0% 10%;
-    padding: 1%;
-    text-align: justify;
+#ol_float {
+    float: left;
 }
 
-li {
+ol, #ol_float {
+    margin: 0% 10% 0% 24%;
     padding: 1%;
 }
 
