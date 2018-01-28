@@ -25,7 +25,7 @@ const randomSentence = () => {
         verb[random(verb.length)] + ' ' +
         comp[random(comp.length)] + ', ' + 
         name[random(name.length)] + '.'
-    )
+    );
 };
 
 const el = document.getElementById('message');
