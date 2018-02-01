@@ -1,0 +1,51 @@
+body {
+    background-color: #75AF96;
+    font-family: monospace;
+}
+
+section {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translateX(-50%) translateY(-50%);
+    width: 50vw;
+}
+
+h1 {
+    text-align: center;
+    padding: 1%;
+    background-color: #AA7939;
+}
+
+header {
+    margin: 2.5% 25% 2.5% 25%;
+}
+
+.icon {
+	text-align: center;
+	margin: 1%;
+	border: 1px white solid;
+	background-color: #AA7939;
+	width: 10%;
+}
+
+.icon a {
+    text-decoration: none;
+}
+
+#ol_float {
+    float: left;
+}
+
+ol, #ol_float {
+    margin: 0% 10% 0% 24%;
+    padding: 1%;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 50vw;
+    transform: translateX(-50%);
+    z-index: -1;
+}

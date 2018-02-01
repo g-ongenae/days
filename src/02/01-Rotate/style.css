@@ -1,0 +1,26 @@
+@keyframes roll { 
+	100% {
+		transform: rotateZ(360);
+		-moz-transform: rotateY(360deg);
+		-webkit-transform: rotateX(360deg);
+	} 
+}
+
+@-moz-keyframes roll { 
+    100% { 
+        -moz-transform: rotateY(360deg); 
+    } 
+}
+
+@-webkit-keyframes roll {
+    100% {
+        -webkit-transform: rotateX(360deg);
+    }
+}
+
+
+#rotate {
+    animation: roll 4s linear infinite;
+    -webkit-animation: roll 4s linear infinite;
+    -moz-animation: roll 4s linear infinite;
+}
