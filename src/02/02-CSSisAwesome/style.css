@@ -1,0 +1,12 @@
+#awesome {
+    word-break: keep-all;
+    text-align: left;
+    font-size: 15em;
+
+    width: 50%;
+    border: 5px solid black;
+}
+
+body {
+    background-color: whitesmoke !important;
+}
