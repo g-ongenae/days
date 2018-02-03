@@ -1,0 +1,67 @@
+@keyframes blink {
+	0% { opacity: 1; }
+	100% { opacity: 0.3; }
+}
+
+section span {
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	margin: 10px;
+	animation: blink 4s ease alternate infinite;
+}
+
+#red {
+	background-color: red;
+	float: left;
+}
+
+#orange {
+	background-color: orange;
+	float: left;
+	animation-delay: 1s;
+}
+
+#green {
+	background-color: green;
+	float: left;
+	animation-delay: 2s;
+}
+
+/* General Style */
+
+body {
+    background-color: whitesmoke;
+    font-family: monospace;
+}
+
+section {
+		border: 1px solid black;
+		border-radius: 20px;
+		background-color: lightgrey;
+	  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 50vw;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.icon {
+	text-align: center;
+	margin: 1%;
+	border: 1px white solid;
+	background-color: #AA7939;
+	width: 10%;
+}
+
+.icon a {
+    text-decoration: none;
+}
