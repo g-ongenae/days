@@ -1,0 +1,44 @@
+@keyframes deform {
+	100% {
+		letter-spacing: 2em;
+		font-size: 4em;
+		opacity: 0;
+	}
+}
+
+#deform {
+	animation: deform 4s ease infinite;
+}
+
+
+body {
+    background-color: whitesmoke;
+    font-family: monospace;
+}
+
+section {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 50vw;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.icon {
+	text-align: center;
+	margin: 1%;
+	border: 1px white solid;
+	background-color: #AA7939;
+	width: 10%;
+}
+
+.icon a {
+    text-decoration: none;
+}
