@@ -1,0 +1,59 @@
+#circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: linear-gradient(33deg, gray, lightgray, darkgray);
+    box-shadow: -7px -7px #ADAFAF;
+
+    /* center a div insie another div*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes rotate {
+    100% { transform: rotate(360deg); }
+}
+
+#lines {
+    width: 200px;
+    height: 5px;
+    background-image: linear-gradient(0, gray, black, darkgray);
+    animation: rotate 10s linear infinite;
+}
+
+/* Generals styling */
+
+body {
+    background-color: whitesmoke;
+    font-family: monospace;
+}
+
+section {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 50vw;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.icon {
+	text-align: center;
+	margin: 1%;
+	border: 1px white solid;
+	background-color: #AA7939;
+	width: 10%;
+}
+
+.icon a {
+    text-decoration: none;
+}
