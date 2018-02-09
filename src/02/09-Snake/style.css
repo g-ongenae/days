@@ -1,0 +1,85 @@
+@keyframes snake {
+    25% {
+        transform: translate(20px, 0);
+    }
+    75% {
+        transform: translate(-20px, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes snake-color {
+	  25% {
+        color: blueviolet;
+				transform: translate(20px, 0);
+    }
+    75% {
+        color: sandybrown;
+				transform: translate(-20px, 0);
+    }
+    100% {
+        color: whitesmoke;
+				transform: translate(0, 0);
+    }
+}
+
+#s {
+    animation: snake 5s linear infinite;
+    font-size: 1.5em;
+}
+#n {
+    animation: snake 5s linear infinite;
+    animation-delay: 1s;
+} 
+#a {
+    animation: snake 5s linear infinite;
+    animation-delay: 2s;
+}
+#k {
+    animation: snake 5s linear infinite;
+    animation-delay: 3s;
+}
+#e {
+    animation: snake 5s linear infinite;
+    animation-delay: 4s;
+}
+#x {
+		animation: snake-color 5s linear infinite;
+    animation-delay: 5s;
+		color: whitesmoke;
+}
+/* Generals styling */
+
+body {
+    background-color: whitesmoke;
+    font-family: monospace;
+}
+
+section {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 50vw;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.icon {
+	text-align: center;
+	margin: 1%;
+	border: 1px white solid;
+	background-color: #AA7939;
+	width: 10%;
+}
+
+.icon a {
+    text-decoration: none;
+}
