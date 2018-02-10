@@ -1,3 +1,13 @@
+@keyframes forward {
+    100% {
+        transform: translate(0, -50px);
+    }
+}
+
+h1 {
+    animation: forward 20s linear infinite;
+}
+
 @keyframes snake {
     25% {
         transform: translate(20px, 0);
