@@ -1,0 +1,55 @@
+section div {
+    background-color: black;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+#left {
+    transform: translate(-50px, -25px);
+    float: left;
+}
+
+#right {
+    transform: translate(50px, -25px);
+    float: right;
+}
+
+#center {
+    width: 200px;
+    height: 200px;
+}
+
+/* Generals styling */
+
+body {
+    background-color: whitesmoke;
+    font-family: monospace;
+}
+
+section {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 50vw;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+aside {
+	text-align: center;
+	margin: 1%;
+	border: 1px white solid;
+	background-color: #AA7939;
+	width: 10%;
+}
+
+aside a {
+    text-decoration: none;
+}
