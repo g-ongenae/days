@@ -1,0 +1,80 @@
+
+#back {
+    position: relative;
+    z-index: 1;
+    background-color: #eac82e;
+    width: 500px;
+    height: 50px;
+    border-radius: 20px;
+    transform: translate(50px, 50px);
+}
+
+#sausage {
+    position: relative;
+    z-index: 2;
+    background-color: #c24f30;
+    width: 600px;
+    height: 50px;
+    border-radius: 40px;
+    transform: translate(0, 25px);
+    text-align: center;
+}
+
+#front {
+    position: relative;
+    z-index: 3;
+    background-color: #eac82e;
+    width: 550px;
+    height: 50px;
+    border-radius: 20px;
+    transform: translate(25px, 0px);
+}
+
+/* Horrible hack to have some ketchup */
+
+section span {
+    color: transparent;
+}
+
+section:active span {
+    color: #FF0300;
+    letter-spacing: 10px;
+    font-size: 700%;
+    font-style: bold;
+    display: inline-block;
+    transform: translate(0px, -25px);
+}
+
+/* Generals styling */
+
+body {
+    background-color: whitesmoke;
+    font-family: monospace;
+}
+
+section {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 50vw;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+aside {
+	text-align: center;
+	margin: 1%;
+	border: 1px white solid;
+	background-color: #AA7939;
+	width: 10%;
+}
+
+aside a {
+    text-decoration: none;
+}
