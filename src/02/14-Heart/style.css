@@ -1,0 +1,65 @@
+section div {
+    background-color: crimson;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 3em;
+}
+
+#left, #right {
+    border-radius: 45% 45% 0 0;
+    width: 100px;
+    height: 150px;
+}
+
+#left {
+    float: left;
+}
+
+#right {
+    float: right;
+    transform: translate(-10px, 0);
+}
+
+#bottom {
+    width: 0;
+    border-top: 95px solid crimson;
+    border-bottom: 95px solid transparent;
+    border-left: 95px solid whitesmoke;
+    border-right: 95px solid whitesmoke;
+    background-color: transparent;
+    transform: translate(0, 100px);
+}
+
+/* Generals styling */
+
+body {
+    background-color: whitesmoke;
+    font-family: monospace;
+}
+
+section {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 50vw;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+aside {
+	text-align: center;
+	margin: 1%;
+	border: 1px white solid;
+	background-color: #AA7939;
+	width: 10%;
+}
+
+aside a {
+    text-decoration: none;
+}
