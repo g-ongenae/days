@@ -1,0 +1,86 @@
+@keyframes tickles-left {
+    50% {
+        transform: translate(-25px, 10px) rotate(-30deg);
+    }
+    100% {
+        transform: translate(-15px, 0px) rotate(-20deg);
+    }
+}
+
+@keyframes tickles-right {
+    50% {
+        transform: translate(25px, 10px) rotate(30deg);
+    }
+    100% {
+        transform: translate(15px, 0px) rotate(20deg);
+    }
+}
+
+#left, #right {
+    width: 0;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid black;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    background-color: transparent;
+}
+
+#left {
+    float: left;
+    transform: translate(-20px, 5px) rotate(-25deg);
+}
+
+#left:hover {
+    animation: tickles-left 0.5s linear infinite;
+}
+
+#right {
+    float: right;
+    transform: translate(20px, 5px) rotate(25deg);
+}
+
+#right:hover {
+    animation: tickles-right 0.5s linear infinite;
+}
+
+#bottom {
+    background-color: black;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    transform: translate(0, 60px);
+}
+
+/* Generals styling */
+
+body {
+    background-color: whitesmoke;
+    font-family: monospace;
+}
+
+section {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 50vw;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+aside {
+	text-align: center;
+	margin: 1%;
+	border: 1px white solid;
+	background-color: #AA7939;
+	width: 10%;
+}
+
+aside a {
+    text-decoration: none;
+}
