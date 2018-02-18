@@ -1,0 +1,139 @@
+section {
+    width: 1500px;
+    height: 350px;
+}
+
+section > div {
+    position: relative;
+    z-index: 1;
+    width: 33%;
+    height: 100%;
+    background-color: whitesmoke;
+    float: left;
+}
+
+section > div:last-child {
+    float: right;
+}
+
+main {
+    margin-left: 33.4%;
+    width: 33%;
+    height: 100%;
+    border: 2px solid black;
+    border-radius: 2.5%;
+    background-image: linear-gradient(0, blue, lightblue 60%);
+    position: absolute;
+}
+
+
+.bottom {
+    width: 100%;
+    height: 50%;
+    background-image: linear-gradient(0, green, lightgreen);
+    position: absolute;
+    bottom: 0;
+    border-top: 2px solid white;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+
+.rails {
+    width: 100%;
+    height: 10%;
+    border-top: 4px double black;
+    border-bottom: 4px double black;
+    position: absolute;
+    bottom: 25%;
+}
+
+@keyframes move {
+    from {
+        left: 150%;
+    }
+    to {
+        left: -50%;
+    } 
+}
+
+.train {
+    width: 50%;
+    height: 20%;
+    position: absolute;
+    bottom: 28%;
+    left: 50%;
+    animation: move 2s linear infinite;
+}
+
+.wagon {
+    width: 47.5%;
+    height: 100%;
+    background-image: linear-gradient(0, blue, 10%, grey, 90%, blue);
+    border-radius: 75% 15% 15% 30%;
+    float: left;
+    margin-right: 2%;
+}
+
+.reverse {
+    transform: rotateY(180deg);
+}
+
+.wagon > div {
+    width: 5%;
+    height: 5%;
+    border: 3px double black;
+    border-radius: 50%;
+    background-color: grey;
+    position: absolute;
+    bottom: -15%;
+}
+
+.wagon > div:first-child {
+    left: 5px;
+}
+
+.wagon > div:nth-child(2) {
+    left: 25px;
+}
+
+.wagon > div:nth-child(3) {
+    left: 75px;
+}
+
+.wagon > div:last-child {
+    left: 95px;
+}
+
+/* Generals styling */
+
+body {
+    background-color: whitesmoke;
+    font-family: monospace;
+}
+
+section {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 50vw;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+aside {
+	text-align: center;
+	margin: 1%;
+	border: 1px white solid;
+	background-color: #AA7939;
+	width: 10%;
+}
+
+aside a {
+    text-decoration: none;
+}
