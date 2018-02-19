@@ -1,0 +1,57 @@
+@keyframes fall {
+    5% {
+        transform: rotate(20deg);
+    }
+    10% {
+        transform: rotate(20deg);
+    }
+    30% {
+        transform: translate(0, 5vh) rotate(100deg)
+    }
+    60% {
+        transform: translate(0, 15vh) rotate(200deg);
+    }
+    100% {
+        transform: translate(0, 60vh) rotate(300deg);
+    }
+}
+
+h1 > span {
+    display: inline-block;
+    animation: fall 10s linear;
+    animation-fill-mode: forwards;
+}
+
+/* Generals styling */
+
+body {
+    background-color: whitesmoke;
+    font-family: monospace;
+}
+
+section {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 50vw;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+aside {
+	text-align: center;
+	margin: 1%;
+	border: 1px white solid;
+	background-color: #AA7939;
+	width: 10%;
+}
+
+aside a {
+    text-decoration: none;
+}
