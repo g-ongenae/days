@@ -1,0 +1,59 @@
+main {
+    width: 500px;
+    height: 350px;
+    display: flex;
+    transform: rotate(180deg);
+    border: 5px solid black;
+    outline: 10px solid gray;
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+}
+
+main div {
+    flex: 1;
+    border: 2px solid gray;
+    outline: 4px solid black;
+}
+
+section p {
+    position: absolute;
+    font-size: 15em;
+    margin: auto;
+    top: 24%;
+    left: 31%;
+}
+
+/* Generals styling */
+
+body {
+    background-color: whitesmoke;
+    font-family: monospace;
+}
+
+section {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 50vw;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+aside {
+	text-align: center;
+	margin: 1%;
+	border: 1px white solid;
+	background-color: #AA7939;
+	width: 10%;
+}
+
+aside a {
+    text-decoration: none;
+}
