@@ -1,0 +1,86 @@
+
+.head {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: black;
+    transform: translate(36.5px, 25px);
+}
+
+.eye {
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border: 7px solid white;
+    border-radius: 50%;
+    float: left;
+}
+
+.eye:first-child {
+    transform: translate(15px, 10px);
+}
+
+.eye:last-child {
+    transform: translate(20px, 10px);
+}
+
+.body {
+    width: 175px;
+    height: 250px;
+    border-radius: 250px 250px 150px 150px;
+    border: 2px solid white;
+    background-image: linear-gradient(90deg, black, lightblue, black);
+}
+
+.pawn {
+    width: 50px;
+    height: 35px;
+    border-radius: 25px 25px 15px 15px;
+    border: 2px solid white;
+    background-color: black;
+    float: left;
+}
+
+.pawn:first-child {
+    transform: translate(25px, 235px);
+}
+
+.pawn:last-child {
+    transform: translate(40px, 235px);
+}
+
+
+/* Generals styling */
+
+body {
+    background-color: whitesmoke;
+    font-family: monospace;
+}
+
+section {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 50vw;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+aside {
+	text-align: center;
+	margin: 1%;
+	border: 1px white solid;
+	background-color: #AA7939;
+	width: 10%;
+}
+
+aside a {
+    text-decoration: none;
+}
