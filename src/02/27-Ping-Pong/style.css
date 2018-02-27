@@ -1,0 +1,108 @@
+:root {
+    --green-set: rgb(0, 53, 0);
+}
+
+section {
+    width: 500px;
+    height: 350px;
+    background-color: var(--green-set);
+    border: 4px solid white;
+    outline: 5px solid var(--green-set);
+}
+
+#middle {
+    height: 0;
+    width: 100%;
+    border: 2px dashed white;
+    position: absolute;
+    top: 50%;
+}
+
+#mare {
+    height: 100%;
+    width: 40%;
+    border-right: 4px dashed white;
+    border-left: 4px dashed white;
+    position: absolute;
+    left: 30%;
+}
+
+#separate {
+    height: 100%;
+    width: 0;
+    border: 2px solid white;
+    position: absolute;
+    left: 50%;
+}
+
+@keyframes play {
+    0% {
+        transform: translate(0px, 175px);
+    }
+    24% {
+        transform: translate(300px, 175px) rotate(90deg);
+    }
+    25% {
+        transform: translate(300px, 175px) rotate(90deg);
+    }
+    49% {
+        transform: translate(475px, 175px) rotate(180deg);
+    }
+    50% {
+        transform: translate(475px, 175px) rotate(180deg);
+    }
+    74% {
+        transform: translate(200px, 175px) rotate(270deg);
+    }
+    75% {
+        transform: translate(200px, 175px) rotate(270deg);
+    }
+    99% {
+        transform: translate(0px, 175px);
+    }
+    100% {
+        transform: translate(0, 175px);
+    }
+}
+
+#ball {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-image: linear-gradient(45deg, grey, white 40%);
+    animation: play 5s linear infinite;
+}
+
+/* Generals styling */
+
+body {
+    background-color: whitesmoke;
+    font-family: monospace;
+}
+
+section {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 50vw;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+aside {
+	text-align: center;
+	margin: 1%;
+	border: 1px white solid;
+	background-color: #AA7939;
+	width: 10%;
+}
+
+aside a {
+    text-decoration: none;
+}
