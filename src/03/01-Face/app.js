@@ -9,7 +9,7 @@ ctx.fill();
 
 // Smile
 ctx.beginPath();
-ctx.arc(150, 75, 25, Math.PI / 3, - 4 * Math.PI / 3);
+ctx.arc(150, 75, 25, Math.PI / 3, -4 * Math.PI / 3);
 ctx.fillStyle = 'white';
 ctx.fill();
 

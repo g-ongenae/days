@@ -14,7 +14,7 @@ const random = (min, max) => {
     }
 
     if (min > max) {
-        const error =  new Error('Min cannot be superior to Max');
+        const error = new Error('Min cannot be superior to Max');
         error.inputs = { min, max };
         throw error;
     }

@@ -1,0 +1,15 @@
+{
+  "name": "days",
+  "version": "0.0.1",
+  "description": "Just playing with front web everyday.",
+  "main": "src/index.html",
+  "repository": "git@github.com:g-ongenae/days.git",
+  "author": "Guillaume Ongenae <guillaume.ongenae@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint ."
+  },
+  "devDependencies": {
+    "eslint": "^4.18.2"
+  }
+}

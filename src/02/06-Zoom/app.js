@@ -4,7 +4,7 @@ const text = h1
 	.innerText
 	.split(' ')
 	.map((s) => {
-		return '<span>' + s + '</span>'
+		return '<span>' + s + '</span>';
 	})
 	.join(' ');
 

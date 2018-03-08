@@ -75,7 +75,7 @@ const innerArc = (x, faceRadius, radiusMin, radiusMax) => {
         y,
         random(radiusMin, radiusMax),
         Math.PI * Math.random(),
-        Math.PI * Math.random(),
+        Math.PI * Math.random()
     );
 };
 

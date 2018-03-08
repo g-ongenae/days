@@ -1,4 +1,4 @@
-const main  = document.getElementsByTagName('main')[0];
+const main = document.getElementsByTagName('main')[0];
 
 const randomDiv = () => {
     const divs = main.childNodes;

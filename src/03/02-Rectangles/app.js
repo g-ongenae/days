@@ -11,7 +11,7 @@ const randomColor = () => {
     return '#' + (Math.random() * 0xFFFFFF<<0).toString(16);
 };
 
-const randomRect = (context, maxPos) => {
+const randomRect = (context, maxPos) => {
     context.beginPath();
     context.lineWidth = random(20);
     context.strokeStyle = randomColor();
