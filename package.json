@@ -7,12 +7,13 @@
   "author": "Guillaume Ongenae <guillaume.ongenae@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "csslint": "./node_modules/.bin/csslint .",
-    "eslint": "./node_modules/.bin/eslint .",
-    "lint": "yarn run eslint && yarn run csslint"
+    "lint-css": "./node_modules/.bin/stylelint .",
+    "lint-js": "./node_modules/.bin/eslint .",
+    "lint": "yarn run lint-js && yarn run lint-css"
   },
   "devDependencies": {
-    "csslint": "^1.0.5",
-    "eslint": "^4.18.2"
+    "eslint": "^4.18.2",
+    "stylelint": "^9.1.1",
+    "stylelint-config-standard": "^18.2.0"
   }
 }
