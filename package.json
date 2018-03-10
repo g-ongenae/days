@@ -7,9 +7,12 @@
   "author": "Guillaume Ongenae <guillaume.ongenae@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "lint": "./node_modules/.bin/eslint ."
+    "csslint": "./node_modules/.bin/csslint .",
+    "eslint": "./node_modules/.bin/eslint .",
+    "lint": "yarn run eslint && yarn run csslint"
   },
   "devDependencies": {
+    "csslint": "^1.0.5",
     "eslint": "^4.18.2"
   }
 }
