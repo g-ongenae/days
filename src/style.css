@@ -1,24 +1,24 @@
 body {
-    background-color: #75AF96;
-    font-family: monospace;
+	background-color: #75AF96;
+	font-family: monospace;
 }
 
 section {
-    position: absolute;
-    top: 50vh;
-    left: 50vw;
-    transform: translateX(-50%) translateY(-50%);
-    width: 50vw;
+	position: absolute;
+	top: 50vh;
+	left: 50vw;
+	transform: translateX(-50%) translateY(-50%);
+	width: 50vw;
 }
 
 h1 {
-    text-align: center;
-    padding: 1%;
-    background-color: #AA7939;
+	text-align: center;
+	padding: 1%;
+	background-color: #AA7939;
 }
 
 header {
-    margin: 2.5% 25% 2.5% 25%;
+	margin: 2.5% 25% 2.5% 25%;
 }
 
 .icon {
@@ -30,22 +30,22 @@ header {
 }
 
 .icon a {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 #ol_float {
-    float: left;
+	float: left;
 }
 
 ol, #ol_float {
-    margin: 0% 10% 0% 24%;
-    padding: 1%;
+	margin: 0% 10% 0% 24%;
+	padding: 1%;
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    left: 50vw;
-    transform: translateX(-50%);
-    z-index: -1;
+	position: absolute;
+	bottom: 0;
+	left: 50vw;
+	transform: translateX(-50%);
+	z-index: -1;
 }

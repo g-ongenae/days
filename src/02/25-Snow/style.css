@@ -1,58 +1,61 @@
 section {
-    width: 500px;
-    height: 350px;
-    background-image: linear-gradient(0, #e6f2ff, lightblue 60%);
-    border: 5px solid white;
-    outline: 5px solid black;
+	width: 500px;
+	height: 350px;
+	background-image: linear-gradient(0deg, #E6F2FF, lightblue 60%);
+	border: 5px solid white;
+	outline: 5px solid black;
+
+	/* General styling */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 @keyframes move {
-    0% {
-        transform: translate(0, 0);
-    }
-    25% {
-        transform: translate(-2.5px, -2.5px);
-    }
-    50% {
-        transform: translate(2.5px, -2.5px);
-    }
-    75% {
-        transform: translate(2.5px, 2.5px);
-    }
-    100% {
-        transform: translate(0, 0);
-    }
+	0% {
+		transform: translate(0, 0);
+	}
+
+	25% {
+		transform: translate(-2.5px, -2.5px);
+	}
+
+	50% {
+		transform: translate(2.5px, -2.5px);
+	}
+
+	75% {
+		transform: translate(2.5px, 2.5px);
+	}
+
+	100% {
+		transform: translate(0, 0);
+	}
 }
 
 section > div {
-    width: 5px;
-    height: 5px;
-    background-color: white;
-    border-radius: 50%;
-    position: absolute;
-    animation: move 5s linear infinite;
-} 
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	position: absolute;
+	animation: move 5s linear infinite;
+}
 
 /* Generals styling */
 
 body {
-    background-color: whitesmoke;
-    font-family: monospace;
-}
-
-section {
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	background-color: whitesmoke;
+	font-family: monospace;
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    left: 50vw;
-    transform: translateX(-50%);
-    z-index: -1;
+	position: absolute;
+	bottom: 0;
+	left: 50vw;
+	transform: translateX(-50%);
+	z-index: -1;
 }
 
 aside {
@@ -64,5 +67,5 @@ aside {
 }
 
 aside a {
-    text-decoration: none;
+	text-decoration: none;
 }

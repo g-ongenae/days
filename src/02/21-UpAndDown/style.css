@@ -1,57 +1,59 @@
 @keyframes up {
-    from {
-        transform: translate(0, -100px);
-    }
-    to {
-        transform: translate(0, 100px);
-    }
+	from {
+		transform: translate(0, -100px);
+	}
+
+	to {
+		transform: translate(0, 100px);
+	}
 }
 
 @keyframes visible {
-    from {
-        color: transparent;
-    }
-    to {
-        color: black;
-    }
+	from {
+		color: transparent;
+	}
+
+	to {
+		color: black;
+	}
 }
 
 h1 {
-    font-size: 3em;
-    animation: up 3s linear alternate;
-    animation-fill-mode: forwards;
+	font-size: 3em;
+	animation: up 3s linear alternate;
+	animation-fill-mode: forwards;
 }
 
 h1 > span:first-child {
-    animation: visible 3s linear reverse;
-    animation-fill-mode: forwards;
+	animation: visible 3s linear reverse;
+	animation-fill-mode: forwards;
 }
 
 h1 > span:last-child {
-    animation: visible 3s linear alternate;
-    animation-fill-mode: forwards;
+	animation: visible 3s linear alternate;
+	animation-fill-mode: forwards;
 }
 
 /* Generals styling */
 
 body {
-    background-color: whitesmoke;
-    font-family: monospace;
+	background-color: whitesmoke;
+	font-family: monospace;
 }
 
 section {
 	position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    left: 50vw;
-    transform: translateX(-50%);
-    z-index: -1;
+	position: absolute;
+	bottom: 0;
+	left: 50vw;
+	transform: translateX(-50%);
+	z-index: -1;
 }
 
 aside {
@@ -63,5 +65,5 @@ aside {
 }
 
 aside a {
-    text-decoration: none;
+	text-decoration: none;
 }

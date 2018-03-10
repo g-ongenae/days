@@ -1,45 +1,45 @@
 @keyframes up {
-    100% {
-        position: relative;
-        text-shadow: lightslategray -15px 10px 0px;
-        top: -10px;
-        right: -10px;
-    }
-}
-
-span:hover {
-    animation: up 0.3s linear;
-    animation-fill-mode: forwards;
+	100% {
+		position: relative;
+		text-shadow: lightslategray -15px 10px 0;
+		top: -10px;
+		right: -10px;
+	}
 }
 
 span {
-    animation: none;
+	animation: none;
+}
+
+span:hover {
+	animation: up 0.3s linear;
+	animation-fill-mode: forwards;
 }
 
 h1 {
-    font-size: 6em;
+	font-size: 6em;
 }
 
 /* Generals styling */
 
 body {
-    background-color: whitesmoke;
-    font-family: monospace;
+	background-color: whitesmoke;
+	font-family: monospace;
 }
 
 section {
 	position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    left: 50vw;
-    transform: translateX(-50%);
-    z-index: -1;
+	position: absolute;
+	bottom: 0;
+	left: 50vw;
+	transform: translateX(-50%);
+	z-index: -1;
 }
 
 .icon {
@@ -51,5 +51,5 @@ footer {
 }
 
 .icon a {
-    text-decoration: none;
+	text-decoration: none;
 }

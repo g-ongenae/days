@@ -3,7 +3,6 @@ $orange: #AA7939;
 $green: #75AF96;
 $yellow: #F6F1D1;
 
-
 /* Rules */
 body {
 	background-image: url(https://images.unsplash.com/photo-1431936424001-447bddcccff1?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=7e9fd3f64e6f4330fa6c5ee240f78366);
@@ -27,13 +26,12 @@ body {
 }
 
 section {
-    /* Center in middle of screen */
-    position: absolute;
-    top: 50vh;
-    left: 50vw;
-    transform: translateX(-50%) translateY(-50%);
-
-    width: 50vw;
+	/* Center in middle of screen */
+	position: absolute;
+	top: 50vh;
+	left: 50vw;
+	transform: translateX(-50%) translateY(-50%);
+	width: 50vw;
 	background-color: $yellow;
 	padding: 0.5%;
 }
@@ -56,10 +54,10 @@ label {
 
 footer {
 	/* Center at bottom */
-    position: absolute;
-    bottom: 0;
-    left: 50vw;
-    transform: translateX(-50%);
+	position: absolute;
+	bottom: 0;
+	left: 50vw;
+	transform: translateX(-50%);
 }
 
 /*

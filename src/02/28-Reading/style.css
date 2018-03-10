@@ -1,85 +1,91 @@
 :root {
-    --border-color: black;
-    --hair-color: yellow;
-    --face-color: wheat;
-    --eye-color: black;
-    --book-color: red;
+	--border-color: black;
+	--hair-color: yellow;
+	--face-color: wheat;
+	--eye-color: black;
+	--book-color: red;
 }
 
 .center {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
 }
 
 section {
-    width: 500px;
-    height: 350px;
-    background: lightgray;
-    border: 5px double var(--border-color);
-    border-radius: 5px;
+	width: 500px;
+	height: 350px;
+	background: lightgray;
+	border: 5px double var(--border-color);
+	border-radius: 5px;
+
+	/* General styling */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 #reader {
-    width: 150px;
-    height: 250px;
-    border-radius: 50% 50% 0 0;
-    background: var(--hair-color);
-    bottom: 0;
+	width: 150px;
+	height: 250px;
+	border-radius: 50% 50% 0 0;
+	background: var(--hair-color);
+	bottom: 0;
 }
 
 #face {
-    height: 90%;
-    width: 70%;
-    background: var(--face-color); 
-    bottom: 0;
-    border-radius: 50% 50% 0 0;
+	height: 90%;
+	width: 70%;
+	background: var(--face-color);
+	bottom: 0;
+	border-radius: 50% 50% 0 0;
 }
 
 #eyes {
-    width: 70px;
-    position: absolute;
-    top: 20%;
-    left: 40%;
-    transform: translate(-33%);
+	width: 70px;
+	position: absolute;
+	top: 20%;
+	left: 40%;
+	transform: translate(-33%);
 }
 
 #eyes > div {
-    height: 10px;
-    width:  10px;
-    background: var(--eye-color);
-    border: 10px solid white;
-    border-radius: 50%;
-    float: left;
-    margin-left: 5px;
+	height: 10px;
+	width: 10px;
+	background: var(--eye-color);
+	border: 10px solid white;
+	border-radius: 50%;
+	float: left;
+	margin-left: 5px;
 }
 
-#eyes > div:before {
-    content: '';
-    width: 20px;
-    height: 4px;
-    position: absolute;
-    top: -7px;
-    border-radius: 25%;
-    background: var(--hair-color);
+#eyes > div::before {
+	content: '';
+	width: 20px;
+	height: 4px;
+	position: absolute;
+	top: -7px;
+	border-radius: 25%;
+	background: var(--hair-color);
 }
 
 #book {
 	width: 250px;
-    height: 150px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%);
+	height: 150px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%);
 }
 
 #book > div:first-child, #book > div:last-child {
-    width: 100px;
-    height: 100%;
-    background: var(--book-color);
-    border: 5px double black;
-    position: absolute;
-    bottom: 0;
+	width: 100px;
+	height: 100%;
+	background: var(--book-color);
+	border: 5px double black;
+	position: absolute;
+	bottom: 0;
 }
 
 #book > div:first-child {
@@ -87,41 +93,34 @@ section {
 }
 
 #book > div:nth-child(2) {
-    width: 40px;
-    height: 100%;
-    background: var(--book-color);
-    border: 5px double black;
-    position: absolute;
-    bottom: 0;
-    left: 100px;
-    z-index: 1;
+	width: 40px;
+	height: 100%;
+	background: var(--book-color);
+	border: 5px double black;
+	position: absolute;
+	bottom: 0;
+	left: 100px;
+	z-index: 1;
 }
 
 #book > div:last-child {
-    right: 0;
-    transform: rotateY(-33deg);
+	right: 0;
+	transform: rotateY(-33deg);
 }
 
 /* Generals styling */
 
 body {
-    background-color: whitesmoke;
-    font-family: monospace;
-}
-
-section {
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	background-color: whitesmoke;
+	font-family: monospace;
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    left: 50vw;
-    transform: translateX(-50%);
-    z-index: -1;
+	position: absolute;
+	bottom: 0;
+	left: 50vw;
+	transform: translateX(-50%);
+	z-index: -1;
 }
 
 aside {
@@ -133,5 +132,5 @@ aside {
 }
 
 aside a {
-    text-decoration: none;
+	text-decoration: none;
 }

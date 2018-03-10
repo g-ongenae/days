@@ -1,57 +1,57 @@
 section {
-    width: 500px;
-    height: 350px;
+	width: 500px;
+	height: 350px;
+
+	/* General styling */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 @keyframes appear {
-    from {
-        color: transparent;
-    }
-    to {
-        color: grey;
-    }
+	from {
+		color: transparent;
+	}
+
+	to {
+		color: grey;
+	}
 }
 
-h1:before {
-    content: 'I\'m late.';
-    color: grey;
-    font-size: 0.5em;
-    animation: appear 10s linear;
+h1::before {
+	content: 'I\'m late.';
+	color: grey;
+	font-size: 0.5em;
+	animation: appear 10s linear;
 }
 
-h1:after {
-    content: 'Really late.';
-    color: transparent;
-    font-size: 0.5em;
-    animation: appear 10s linear;
-    animation-fill-mode: forwards;
-    animation-delay: 5s;
+h1::after {
+	content: 'Really late.';
+	color: transparent;
+	font-size: 0.5em;
+	animation: appear 10s linear;
+	animation-fill-mode: forwards;
+	animation-delay: 5s;
 }
 
 h1 {
-    font-size: 3em;
+	font-size: 3em;
 }
 
 /* Generals styling */
 
 body {
-    background-color: whitesmoke;
-    font-family: monospace;
-}
-
-section {
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	background-color: whitesmoke;
+	font-family: monospace;
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    left: 50vw;
-    transform: translateX(-50%);
-    z-index: -1;
+	position: absolute;
+	bottom: 0;
+	left: 50vw;
+	transform: translateX(-50%);
+	z-index: -1;
 }
 
 aside {
@@ -63,5 +63,5 @@ aside {
 }
 
 aside a {
-    text-decoration: none;
+	text-decoration: none;
 }

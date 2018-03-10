@@ -1,52 +1,52 @@
-section > div  {
-    float: left;
-}
-
-section div > div:first-child {
-    width: 50px;
-    height: 50px;
-    transform: rotate(45deg);
-    background-color: black;
+section > div {
+	float: left;
 }
 
 section div > div {
-    width: 121px;
-    height: 10px;
-    background-color: black;
-    transform: rotate(-45deg) translate(-39px, -17px);
+	width: 121px;
+	height: 10px;
+	background-color: black;
+	transform: rotate(-45deg) translate(-39px, -17px);
+}
+
+section div > div:first-child {
+	width: 50px;
+	height: 50px;
+	transform: rotate(45deg);
+	background-color: black;
 }
 
 section div > div:last-child {
-    width: 0;
-    height: 0;
-    border-top: 40px solid transparent;
-    border-bottom: 40px solid black;
-    border-left: 40px solid transparent;
-    border-right: 40px solid transparent;
-    background-color: transparent;
-    transform: translate(-19px, -23px);
+	width: 0;
+	height: 0;
+	border-top: 40px solid transparent;
+	border-bottom: 40px solid black;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	background-color: transparent;
+	transform: translate(-19px, -23px);
 }
 
 /* Generals styling */
 
 body {
-    background-color: whitesmoke;
-    font-family: monospace;
+	background-color: whitesmoke;
+	font-family: monospace;
 }
 
 section {
 	position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    left: 50vw;
-    transform: translateX(-50%);
-    z-index: -1;
+	position: absolute;
+	bottom: 0;
+	left: 50vw;
+	transform: translateX(-50%);
+	z-index: -1;
 }
 
 aside {
@@ -58,5 +58,5 @@ aside {
 }
 
 aside a {
-    text-decoration: none;
+	text-decoration: none;
 }
