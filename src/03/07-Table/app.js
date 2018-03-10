@@ -19,7 +19,7 @@ for (let i = 0; i < NUMBER_RECTANGLES; i++) {
 const random = (base) => {
 	const op = Math.random() > 0.5 ? '+' : '-';
 	const change = Math.floor(Math.random() * canvas.width) / 100;
-    base += eval(op + change); // eslint-disable-line
+	base += eval(op + change);
 	base = base > canvas.height ? canvas.height : base;
 	base = base < 0 ? 0 : base;
 	return base;
