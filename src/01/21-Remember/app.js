@@ -5,33 +5,33 @@ const message = document.getElementById('message');
 
 const save = document.getElementById('save');
 save.addEventListener('click', () => {
-    const text = forms['text'].value;
-    memory.push(text);
-    forms.reset();
-    message.innerText = 'I\'ll remember!';
+	const text = forms.text.value;
+	memory.push(text);
+	forms.reset();
+	message.innerText = 'I\'ll remember!';
 });
 
 const find = (search) => {
-    let i = 0;
+	let i = 0;
 
-    while (i < memory.length) {
-        if (memory[i].includes(search)) {
-            return i;
-        }
+	while (i < memory.length) {
+		if (memory[i].includes(search)) {
+			return i;
+		}
 
-        i++;
-    }
+		i++;
+	}
 
-    return -1;
+	return -1;
 };
 
 const load = document.getElementById('load');
 load.addEventListener('click', () => {
-    const text = forms['text'].value;
-    forms.reset();
+	const text = forms.text.value;
+	forms.reset();
 
-    const id = find(text);
-    message.innerText = id >= 0 ? 
-        'I remember: ' + memory[id] :
-        'I don\'t remember: ' + text;
+	const id = find(text);
+	message.innerText = id >= 0 ?
+		'I remember: ' + memory[id] :
+		'I don\'t remember: ' + text;
 });

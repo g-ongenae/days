@@ -1,93 +1,92 @@
 section {
-    background-image: linear-gradient(0, blue, lightblue 60%);
-    width: 500px;
-    height: 350px;
-    border: 2px solid black;
+	background-image: linear-gradient(0deg, blue, lightblue 60%);
+	width: 500px;
+	height: 350px;
+	border: 2px solid black;
+
+	/* General styling */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .garden {
-    background-image: linear-gradient(60deg, green, lightgreen 50%);
-    width: 100%;
-    height: 33%;
-    bottom: 0;
-    position: absolute;
-    border-top: 1px solid white;
+	background-image: linear-gradient(60deg, green, lightgreen 50%);
+	width: 100%;
+	height: 33%;
+	bottom: 0;
+	position: absolute;
+	border-top: 1px solid white;
 }
 
 .home {
-    width: 150px;
-    height: 100px;
-    transform: translate(200px, -50px);
+	width: 150px;
+	height: 100px;
+	transform: translate(200px, -50px);
 }
 
 .home > div:first-child {
-    width: 0;
-    border-top: 50px solid transparent;
-    border-bottom: 50px solid orangered;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
+	width: 0;
+	border-top: 50px solid transparent;
+	border-bottom: 50px solid orangered;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
 }
 
 .home > div:last-child {
-    margin-left: 10px;
-    width: 50%;
-    height: 100%;
-    border: 1px solid bisque;
-    background-color: beige;
+	margin-left: 10px;
+	width: 50%;
+	height: 100%;
+	border: 1px solid bisque;
+	background-color: beige;
 }
 
 .tree {
-    width: 75px;
-    height: 150px;
+	width: 75px;
+	height: 150px;
 }
 
 .tree > div:first-child {
-    position: relative;
-    background-image: linear-gradient(0, green, lightgreen);
-    border-radius: 50%;
-    width: 100%;
-    height: 50%;
-    z-index: 1;
-    border: 1px dotted greenyellow; 
+	position: relative;
+	background-image: linear-gradient(0deg, green, lightgreen);
+	border-radius: 50%;
+	width: 100%;
+	height: 50%;
+	z-index: 1;
+	border: 1px dotted greenyellow;
 }
 
 .tree > div:last-child {
-    background: brown;
-    width: 33%;
-    height: 80%;
-    transform: translate(100%, -25%);
+	background: brown;
+	width: 33%;
+	height: 80%;
+	transform: translate(100%, -25%);
 }
 
 .tree:first-child {
-    transform: translate(50px, 100px);
+	transform: translate(50px, 100px);
 }
 
 .tree:last-child {
-    transform: translate(350px, -140px);
-    height: 125px;
-    width: 60px;
+	transform: translate(350px, -140px);
+	height: 125px;
+	width: 60px;
 }
 
 /* Generals styling */
 
 body {
-    background-color: whitesmoke;
-    font-family: monospace;
-}
-
-section {
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	background-color: whitesmoke;
+	font-family: monospace;
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    left: 50vw;
-    transform: translateX(-50%);
-    z-index: -1;
+	position: absolute;
+	bottom: 0;
+	left: 50vw;
+	transform: translateX(-50%);
+	z-index: -1;
 }
 
 aside {
@@ -99,5 +98,5 @@ aside {
 }
 
 aside a {
-    text-decoration: none;
+	text-decoration: none;
 }

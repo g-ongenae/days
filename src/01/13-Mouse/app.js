@@ -1,9 +1,5 @@
-document.onmousemove = function(event) {
-    document
-        .getElementById('message')
-        .innerText = "(" +
-            event.clientX +
-            ", " +
-            event.clientY +
-            ")";
-}
+document.onmousemove = function onmousemove (event) {
+	document
+		.getElementById('message')
+		.innerText = `(${event.clientX}, ${event.clientY})`;
+};

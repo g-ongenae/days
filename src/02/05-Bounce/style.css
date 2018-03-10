@@ -1,9 +1,10 @@
 @keyframes bounce {
 	80% {
-		transform: translate(0px, -20px);
+		transform: translate(0, -20px);
 	}
+
 	100% {
-		transform: translate(0px, 5px);
+		transform: translate(0, 5px);
 	}
 }
 
@@ -17,23 +18,23 @@ h1:hover {
 }
 
 body {
-    background-color: whitesmoke;
-    font-family: monospace;
+	background-color: whitesmoke;
+	font-family: monospace;
 }
 
 section {
 	position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    left: 50vw;
-    transform: translateX(-50%);
-    z-index: -1;
+	position: absolute;
+	bottom: 0;
+	left: 50vw;
+	transform: translateX(-50%);
+	z-index: -1;
 }
 
 .icon {
@@ -45,5 +46,5 @@ footer {
 }
 
 .icon a {
-    text-decoration: none;
+	text-decoration: none;
 }

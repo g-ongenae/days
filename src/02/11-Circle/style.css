@@ -1,36 +1,38 @@
 @keyframes circle {
-    0% { transform: translate(0, 100px); color: red; }
-    25% { transform: translate(100px, 0); color: green; }
-    50% { transform: translate(0, -100px); color: blue; }
-    75% { transform: translate(-100px, 0); color: yellow; }
-    100% { transform: translate(0, 100px); color: red; }
+	/* stylelint-disable declaration-block-single-line-max-declarations */
+	0% { transform: translate(0, 100px); color: red; }
+	25% { transform: translate(100px, 0); color: green; }
+	50% { transform: translate(0, -100px); color: blue; }
+	75% { transform: translate(-100px, 0); color: yellow; }
+	100% { transform: translate(0, 100px); color: red; }
+	/* stylelint-enable */
 }
 
 h1 {
-    animation: circle 10s cubic-bezier(.71,-0.64,.34,1.74) infinite;
-    font-size: 6em;
+	animation: circle 10s cubic-bezier(0.71, -0.64, 0.34, 1.74) infinite;
+	font-size: 6em;
 }
 
 /* Generals styling */
 
 body {
-    background-color: whitesmoke;
-    font-family: monospace;
+	background-color: whitesmoke;
+	font-family: monospace;
 }
 
 section {
 	position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    left: 50vw;
-    transform: translateX(-50%);
-    z-index: -1;
+	position: absolute;
+	bottom: 0;
+	left: 50vw;
+	transform: translateX(-50%);
+	z-index: -1;
 }
 
 .icon {
@@ -42,5 +44,5 @@ footer {
 }
 
 .icon a {
-    text-decoration: none;
+	text-decoration: none;
 }

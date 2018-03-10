@@ -1,0 +1,8 @@
+{
+    "extends": "stylelint-config-standard",
+    "rules": {
+        "color-hex-case": "upper",
+        "indentation": "tab",
+        "selector-list-comma-newline-after": "always-multi-line"
+    }
+}

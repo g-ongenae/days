@@ -1,0 +1,21 @@
+{
+  "name": "days",
+  "version": "0.0.1",
+  "description": "Just playing with front web everyday.",
+  "main": "src/index.html",
+  "repository": "git@github.com:g-ongenae/days.git",
+  "author": "Guillaume Ongenae <guillaume.ongenae@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint-css": "./node_modules/.bin/stylelint .",
+    "lint-html": "./node_modules/.bin/htmlhint",
+    "lint-js": "./node_modules/.bin/eslint .",
+    "lint": "yarn run lint-js && yarn run lint-css && yarn run lint-html"
+  },
+  "devDependencies": {
+    "eslint": "^4.18.2",
+    "htmlhint": "^0.9.13",
+    "stylelint": "^9.1.1",
+    "stylelint-config-standard": "^18.2.0"
+  }
+}

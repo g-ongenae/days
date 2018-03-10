@@ -1,0 +1,23 @@
+# Style Lint ignore
+
+## Deps
+node_modules
+yarn.lock
+
+## Docs
+LICENSE
+*.md
+
+## Confs
+*.json
+
+## Generated Files
+*.map
+.sass-cache
+
+## HTML
+*.html
+*.pug
+
+## JS
+*.js

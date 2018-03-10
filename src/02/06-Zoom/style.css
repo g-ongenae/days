@@ -9,35 +9,35 @@
 	100% { font-size: 1em; }
 }
 
+span {
+	animation: unzoom 1s linear;
+}
+
 span:hover {
 	animation: zoom 1s linear;
 	animation-fill-mode: forwards;
 }
 
-span {
-	animation: unzoom 1s linear;
-}
-
 /* Generals styling */
 
 body {
-    background-color: whitesmoke;
-    font-family: monospace;
+	background-color: whitesmoke;
+	font-family: monospace;
 }
 
 section {
 	position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    left: 50vw;
-    transform: translateX(-50%);
-    z-index: -1;
+	position: absolute;
+	bottom: 0;
+	left: 50vw;
+	transform: translateX(-50%);
+	z-index: -1;
 }
 
 .icon {
@@ -49,5 +49,5 @@ footer {
 }
 
 .icon a {
-    text-decoration: none;
+	text-decoration: none;
 }
