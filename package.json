@@ -4,7 +4,7 @@
   "description": "Just playing with front web everyday.",
   "main": "src/index.html",
   "repository": "git@github.com:g-ongenae/days.git",
-  "author": "Guillaume Ongenae <guillaume.ongenae@gmail.com>",
+  "author": "Guillaume Ongenae <guillaume.ongenae@gmail.com> (https://g-ongenae.github.io/)",
   "license": "MIT",
   "scripts": {
     "lint-css": "./node_modules/.bin/stylelint .",
