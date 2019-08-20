@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "eslint": "^5.0.0",
-    "htmlhint": "^0.10.0",
+    "htmlhint": "^0.11.0",
     "stylelint": "^9.1.1",
     "stylelint-config-standard": "^18.2.0"
   }
