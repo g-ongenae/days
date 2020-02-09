@@ -13,7 +13,7 @@
     "lint": "yarn run lint-js && yarn run lint-css && yarn run lint-html"
   },
   "devDependencies": {
-    "eslint": "^5.0.0",
+    "eslint": "^6.3.0",
     "htmlhint": "^0.11.0",
     "stylelint": "^9.1.1",
     "stylelint-config-standard": "^18.2.0"
