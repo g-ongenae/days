@@ -1379,10 +1379,10 @@ html-tags@^3.0.0:
   resolved "https://registry.yarnpkg.com/html-tags/-/html-tags-3.1.0.tgz#7b5e6f7e665e9fb41f30007ed9e0d41e97fb2140"
   integrity sha512-1qYz89hW3lFDEazhjW0yVAV87lw8lVkrJocr72XmBkMKsoSVJCQx3W8BXsC7hO2qAt8BoVjYjtAcZ9perqGnNg==
 
-htmlhint@^0.11.0:
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/htmlhint/-/htmlhint-0.11.0.tgz#d2a315ac7e3371b2bb08373841e85e814b9ccbe5"
-  integrity sha512-uXuRyVhQa0HlNmZg5LJ1BRJvRq5f7IJL/34tItHhZr9re15pwaqAuLUAIcqtwd1bLUCE++7HVPtR+NSReFW0iA==
+htmlhint@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/htmlhint/-/htmlhint-0.12.0.tgz#b3317de8d877d0b7b4ddb11c4d841b9dc5d8dac6"
+  integrity sha512-PXEm6xzUj5rmpws1h84OU5NlxDFaeVf+aXA7qQ+9CUD+L1N4eivXtUj2W35JBqF/sdQGdxiiRJbM8cRW3St7Fg==
   dependencies:
     async "2.6.1"
     colors "1.3.2"
